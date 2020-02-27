@@ -42,7 +42,7 @@
             // 
             this.Lblgreeting.AutoSize = true;
             this.Lblgreeting.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.Lblgreeting.Location = new System.Drawing.Point(33, 39);
+            this.Lblgreeting.Location = new System.Drawing.Point(12, 39);
             this.Lblgreeting.Name = "Lblgreeting";
             this.Lblgreeting.Size = new System.Drawing.Size(512, 36);
             this.Lblgreeting.TabIndex = 0;
@@ -103,15 +103,16 @@
             this.BtnDouble.TabIndex = 6;
             this.BtnDouble.Text = "Double";
             this.BtnDouble.UseVisualStyleBackColor = true;
+            this.BtnDouble.Click += new System.EventHandler(this.BtnDouble_Click);
             // 
             // LblAnswer
             // 
             this.LblAnswer.AutoSize = true;
-            this.LblAnswer.Location = new System.Drawing.Point(59, 383);
+            this.LblAnswer.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.LblAnswer.Location = new System.Drawing.Point(33, 366);
             this.LblAnswer.Name = "LblAnswer";
-            this.LblAnswer.Size = new System.Drawing.Size(53, 17);
+            this.LblAnswer.Size = new System.Drawing.Size(0, 36);
             this.LblAnswer.TabIndex = 7;
-            this.LblAnswer.Text = "answer";
             // 
             // Form1
             // 
