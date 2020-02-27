@@ -36,6 +36,9 @@
             this.BtnInteger = new System.Windows.Forms.Button();
             this.BtnDouble = new System.Windows.Forms.Button();
             this.LblAnswer = new System.Windows.Forms.Label();
+            this.LblRound = new System.Windows.Forms.Label();
+            this.UpdnRound = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.UpdnRound)).BeginInit();
             this.SuspendLayout();
             // 
             // Lblgreeting
@@ -50,14 +53,14 @@
             // 
             // TxtMinimum
             // 
-            this.TxtMinimum.Location = new System.Drawing.Point(212, 125);
+            this.TxtMinimum.Location = new System.Drawing.Point(212, 111);
             this.TxtMinimum.Name = "TxtMinimum";
             this.TxtMinimum.Size = new System.Drawing.Size(296, 22);
             this.TxtMinimum.TabIndex = 1;
             // 
             // TxtMaximum
             // 
-            this.TxtMaximum.Location = new System.Drawing.Point(212, 221);
+            this.TxtMaximum.Location = new System.Drawing.Point(212, 196);
             this.TxtMaximum.Name = "TxtMaximum";
             this.TxtMaximum.Size = new System.Drawing.Size(296, 22);
             this.TxtMaximum.TabIndex = 2;
@@ -66,7 +69,7 @@
             // 
             this.LblMinimum.AutoSize = true;
             this.LblMinimum.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.LblMinimum.Location = new System.Drawing.Point(33, 125);
+            this.LblMinimum.Location = new System.Drawing.Point(33, 111);
             this.LblMinimum.Name = "LblMinimum";
             this.LblMinimum.Size = new System.Drawing.Size(134, 36);
             this.LblMinimum.TabIndex = 3;
@@ -76,7 +79,7 @@
             // 
             this.LblMaximum.AutoSize = true;
             this.LblMaximum.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.LblMaximum.Location = new System.Drawing.Point(33, 221);
+            this.LblMaximum.Location = new System.Drawing.Point(33, 183);
             this.LblMaximum.Name = "LblMaximum";
             this.LblMaximum.Size = new System.Drawing.Size(141, 36);
             this.LblMaximum.TabIndex = 4;
@@ -85,7 +88,7 @@
             // BtnInteger
             // 
             this.BtnInteger.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.BtnInteger.Location = new System.Drawing.Point(70, 298);
+            this.BtnInteger.Location = new System.Drawing.Point(74, 330);
             this.BtnInteger.Name = "BtnInteger";
             this.BtnInteger.Size = new System.Drawing.Size(135, 48);
             this.BtnInteger.TabIndex = 5;
@@ -97,7 +100,7 @@
             // 
             this.BtnDouble.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.BtnDouble.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.BtnDouble.Location = new System.Drawing.Point(332, 298);
+            this.BtnDouble.Location = new System.Drawing.Point(332, 330);
             this.BtnDouble.Name = "BtnDouble";
             this.BtnDouble.Size = new System.Drawing.Size(123, 48);
             this.BtnDouble.TabIndex = 6;
@@ -109,16 +112,35 @@
             // 
             this.LblAnswer.AutoSize = true;
             this.LblAnswer.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.LblAnswer.Location = new System.Drawing.Point(33, 366);
+            this.LblAnswer.Location = new System.Drawing.Point(33, 394);
             this.LblAnswer.Name = "LblAnswer";
             this.LblAnswer.Size = new System.Drawing.Size(0, 36);
             this.LblAnswer.TabIndex = 7;
+            // 
+            // LblRound
+            // 
+            this.LblRound.AutoSize = true;
+            this.LblRound.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.LblRound.Location = new System.Drawing.Point(33, 261);
+            this.LblRound.Name = "LblRound";
+            this.LblRound.Size = new System.Drawing.Size(274, 36);
+            this.LblRound.TabIndex = 9;
+            this.LblRound.Text = "Digits After Decimal";
+            // 
+            // UpdnRound
+            // 
+            this.UpdnRound.Location = new System.Drawing.Point(351, 275);
+            this.UpdnRound.Name = "UpdnRound";
+            this.UpdnRound.Size = new System.Drawing.Size(157, 22);
+            this.UpdnRound.TabIndex = 10;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(581, 449);
+            this.Controls.Add(this.UpdnRound);
+            this.Controls.Add(this.LblRound);
             this.Controls.Add(this.LblAnswer);
             this.Controls.Add(this.BtnDouble);
             this.Controls.Add(this.BtnInteger);
@@ -129,6 +151,7 @@
             this.Controls.Add(this.Lblgreeting);
             this.Name = "Form1";
             this.Text = "Part 4 Random Numbers";
+            ((System.ComponentModel.ISupportInitialize)(this.UpdnRound)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -144,6 +167,8 @@
         private System.Windows.Forms.Button BtnInteger;
         private System.Windows.Forms.Button BtnDouble;
         private System.Windows.Forms.Label LblAnswer;
+        private System.Windows.Forms.Label LblRound;
+        private System.Windows.Forms.NumericUpDown UpdnRound;
     }
 }
 

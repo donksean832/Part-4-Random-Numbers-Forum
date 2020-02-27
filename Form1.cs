@@ -39,30 +39,33 @@ namespace Part_4_Random_Numbers_Forum
 
                 }
                 else
-                    LblAnswer.Text = "Error";
+                    LblAnswer.Text = "Error: Enter Correct Data Type";
             }
-
-
             else
-                LblAnswer.Text = "Error";
-
-            //Maximum = Convert.ToInt32(TxtMaximum.Text);
-            //Answer = rand1.Next(Minimum,Maximum);
-            //LblAnswer.Text = ($"Random {Type}: {Answer}");
-
+                LblAnswer.Text = "Error: Enter Correct Data Type";
         }
-
         private void BtnDouble_Click(object sender, EventArgs e)
         {
             Double Minimum;
             Double Maximum;
-            string Type = "Double";
+            int Round = 3;
+            string Type = "Decimal";
+
             Random rand1 = new Random();
-            Minimum = Convert.ToDouble(TxtMinimum.Text);
-            Maximum = Convert.ToDouble(TxtMaximum.Text);
-            Part = rand1.NextDouble();
-            Answer = rand1.NextDouble() * (Maximum - Minimum) + Minimum;
-            LblAnswer.Text = ($"Random {Type}: {Answer}");
+            if (Double.TryParse(TxtMinimum.Text, out Minimum))
+            {
+                if (Double.TryParse(TxtMaximum.Text, out Maximum))
+                {
+                    Part = rand1.NextDouble();
+                    Round = Convert.ToInt32(UpdnRound.Value);
+                    Answer = Math.Round((rand1.NextDouble() * (Maximum - Minimum) + Minimum),Round);
+                    LblAnswer.Text = ($"Random {Type}: {Answer}");
+                }
+                else
+                    LblAnswer.Text = "Error: Enter Correct Data Type";
+            }
+            else
+                LblAnswer.Text = "Error: Enter Correct Data Type";
         }
     }
 }
